@@ -40,6 +40,10 @@ $ git config --global user.name "vinniec" (impostato il mio nick)
 $ git config --global user.email fz12345@gmail.com (impostata la mia email)
 
 $ export GIT_SSL_NO_VERIFY=false (pare che se non si modifica questa variabile d'ambiente git non riesca ad utilizzare https), in alternativa si può usare il comando $ git config http.sslVerify "false"
+La cosa migliore è comunque mettere nel file ~/.gitconfig il testo:
+[http]
+	sslverify = false
+
 
 (nota per tinycore, SCM, git normale non funziona, ssh chiede chiavi pubbliche e quindi è meglio utilizzare https)
 $ git clone https://github.com/vinniec/Pytho_33_Tut.git (scarica i file del git)
