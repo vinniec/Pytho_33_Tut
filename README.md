@@ -39,8 +39,10 @@ Creazione Repository Git
 $ git config --global user.name "vinniec" (impostato il mio nick)
 $ git config --global user.email fz12345@gmail.com (impostata la mia email)
 
+$ export GIT_SSL_NO_VERIFY=false (pare che se non si modifica questa variabile d'ambiente git non riesca ad utilizzare https), in alternativa si può usare il comando $ git config http.sslVerify "false
+
 (nota per tinycore, SCM, git normale non funziona, ssh chiede chiavi pubbliche e quindi è meglio utilizzare https)
-$ /apps/git/bin/git clone https://github.com/vinniec/Pytho_33_Tut.git (scarica i file del git)
+$ git clone https://github.com/vinniec/Pytho_33_Tut.git (scarica i file del git)
 $ cd ./Pytho_33_Tut/ (si dirige nel repo)
 
 copio tutti i file della traduzione (tutorial e lo zip) più questo readme, le directory vuote non vengono caricate sul server, per cui la prima volta che si caricano queste directory vuote bisognerà inserire al loro interno dei file chiamati .gitignore al loro interno contenenti
@@ -70,10 +72,12 @@ Cartella Locale: /home/tc/PROVA/Pytho_33_Tut
 
 Salvare dopo aver fatto le modifiche
 ====================================
-Ho l'impressione che omegat non sia ancora capace di salvare su git per cui per ora dopo aver fatto le modifiche bisognerà scrivere in ordine:
-1) git add . (per listare tutti i file cambiati)
+Omegat pare supportare il downlaod e l'upload verso git però utilizza la libreria jgit che a sua volta si avvale solo di ssh per il login e per questo motivo io sono punto e accapo, per cui se non si utilizza ssh per questioni di chiavi di riconoscimento allora conviene scaricare a mano da git con il comando git clone https... perchè se lo si fa da omegat allora questo non riuscirà ad aggiornare.
+
+Una volta modificato i file quindi bisognerà sempre salvare a mano le modifiche con i seguenti comandi:
+1) git add . (per aggiungere tutti i nuovi file)
 2) git commit -m "messaggio che spiega i cambiamenti"
-3) git push -u origin master (per caricare sul server)
+3) git push origin master (per caricare sul server)
 
 E probabilmente bisogna scaricare ogni volta che si inizia a tradurre
 
