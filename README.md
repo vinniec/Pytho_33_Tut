@@ -7,15 +7,15 @@ Traduzione python tutorial 3.3.0
 Questo è il primo progetto per vedere se è fattibile utilizzare omegat per tradurre il tutorial di python 3.3.0 e collegarlo con git.
 Per ora ciò che ho usato è stato:
 
-Documentazione
-==============
+Aquisizione Documentazione
+==========================
 1) Download della documentazione in html http://docs.python.org/3/archives/python-3.3.0-docs-html.zip
 
 2) Prelevato dalla decompressione dell'archivio delle directory _sources _static e tutorial, le prime due le ho ricompresse perché non dovranno essere tradotte ma serviranno solo a quando sarà finita la traduzione per migliorare la visualizzazione del tutorial
 
 
-Omegat
-======
+Creazione Progetto Omegat
+=========================
 1) Scaricato il programma da questo link e decompresso http://sourceforge.net/projects/omegat/files/OmegaT%20-%20Latest/OmegaT%202.6.1%20update%201/OmegaT_2.6.1_01_Beta_Without_JRE.zip/download
 
 
@@ -32,14 +32,14 @@ Omegat
 7) Riavviando il programma si noterà il caricamento di questi file.
 
 
-Git
-===
-1) Con un terminale al suo interno ho scritto:
+Creazione Repository Git
+========================
+1) Dopo aver installato git, con un terminale al suo interno ho scritto:
 
 $ git config --global user.name "vinniec" (impostato il mio nick)
 $ git config --global user.email fz12345@gmail.com (impostata la mia email)
 
-SCM, git normale non funziona, ssh chiede chiavi pubbliche e quindi è meglio https
+(nota per tinycore, SCM, git normale non funziona, ssh chiede chiavi pubbliche e quindi è meglio utilizzare https)
 $ /apps/git/bin/git clone https://github.com/vinniec/Pytho_33_Tut.git (scarica i file del git)
 $ cd ./Pytho_33_Tut/ (si dirige nel repo)
 
@@ -56,3 +56,28 @@ $ git commit -m "progetto di traduzione iniziale" (x commentare questo add)
 $ /apps/git/bin/git push origin master (carica i file sul server)
 
 
+Caricamento repository git da Omegat
+====================================
+1) menu->Progetto->Scarica il Progetto in collaborazione
+scelgo git
+Url Deposito: https://github.com/vinniec/Pytho_33_Tut.git
+Cartella Locale: /home/tc/PROVA/Pytho_33_Tut
+
+2)Attendo che scarichi e quando esce la finestra dei file da tradurre e seleziono  quello che mi interessa (si inizia da index.html), e poi chiudo questa finestra
+
+3)Posso iniziare a tradurre, se faccio doppioclick su un capoverso mi fa iniziare a scrivere (i capoversi non tradotti dovrebbero essere blu e quando iniziamo a tradurre il segmento corrente dovrebbe essere vuoto, se abbiamo settato omegat come dicevamo prima)
+
+
+Salvare dopo aver fatto le modifiche
+====================================
+Ho l'impressione che omegat non sia ancora capace di salvare su git per cui per ora dopo aver fatto le modifiche bisognerà scrivere in ordine:
+1) git add . (per listare tutti i file cambiati)
+2) git commit -m "messaggio che spiega i cambiamenti"
+3) git push -u origin master (per caricare sul server)
+
+E probabilmente bisogna scaricare ogni volta che si inizia a tradurre
+
+
+Risorse
+=======
+Un ottima risorsa per git è questa http://git-scm.com/book/it , anche questo sembra carino http://rogerdudler.githhtthttp://git-scm.com/book/itp://git-scm.com/book/itub.com/git-guide/index.it.html
