@@ -31,23 +31,19 @@ Omegat
 
 7) Riavviando il programma si noterà il caricamento di questi file.
 
+
 Git
 ===
-
 1) Con un terminale al suo interno ho scritto:
-$git config --global user.name "vinniec" (impostato il mio nick)
-$git config --global user.email fz12345@gmail.com (impostata la mia email)
-$git clone git://github.com/vinniec/Pytho_33_Tut.git (scarica il repo)
-$cd ./Pytho_33_Tut/ (si dirige nel repo)
+git config --global user.name "vinniec" (impostato il mio nick)
+$ git config --global user.email fz12345@gmail.com (impostata la mia email)
+#SCM, git normale non funziona, ssh chiede chiavi pubbliche e quindi è meglio https
+$ /apps/git/bin/git clone https://github.com/vinniec/Pytho_33_Tut.git
+$ cd ./Pytho_33_Tut/ (si dirige nel repo)
 copio tutti i file della traduzione (tutorial e lo zip) più questo readme
-$git status (controllo tutte le nuove modifiche)
-$$git add . (per inserire tutti i file della cartella nel repository git)
-$git commit -m "progetto di traduzione iniziale" (x commentare questo primo add)
-#$git init (per inizializzare il repository git)
-#$git add . (per inserire tutti i file della cartella nel repository git)
-#$git commit -m "progetto di traduzione iniziale" (x commentare questo primo add)
-#$git remote add origin https://github.com/vinniec/Python_33_Tutorial.git
-#$git push -u origin master
+$ git status (controllo tutte le nuove modifiche)
+$ git add . (per inserire tutti i file della cartella nel repository git)
+$ git commit -m "progetto di traduzione iniziale" (x commentare questo add)
+$ /apps/git/bin/git push origin master (carica i file sul server)
 
-#SCM, git normale non funziona
-/apps/git/bin/git clone https://github.com/vinniec/Pytho_33_Tut.git
+
