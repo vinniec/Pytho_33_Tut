@@ -43,9 +43,16 @@ SCM, git normale non funziona, ssh chiede chiavi pubbliche e quindi è meglio ht
 $ /apps/git/bin/git clone https://github.com/vinniec/Pytho_33_Tut.git (scarica i file del git)
 $ cd ./Pytho_33_Tut/ (si dirige nel repo)
 
-copio tutti i file della traduzione (tutorial e lo zip) più questo readme
+copio tutti i file della traduzione (tutorial e lo zip) più questo readme, le directory vuote non vengono caricate sul server, per cui bisognerà inserire dei file chiamati .gitignore al loro interno contenenti
+ # Ignore everything in this directory
+ *
+ # Except this file
+ !.gitignore
+questi file non verranno copiati nel server
 
 $ git status (controllo tutte le nuove modifiche)
 $ git add . (per inserire tutti i file della cartella nel repository git)
 $ git commit -m "progetto di traduzione iniziale" (x commentare questo add)
 $ /apps/git/bin/git push origin master (carica i file sul server)
+
+
