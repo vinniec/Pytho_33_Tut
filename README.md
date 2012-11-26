@@ -48,7 +48,7 @@ copio tutti i file della traduzione (tutorial e lo zip) più questo readme, le d
  *
  # Except this file
  !.gitignore
-questi file non verranno copiati nel server
+questi file non verranno copiati nel server e fanno ignorare tutto il contenuto delle directory, per cui se ci sono dei file al loro interno insieme al .gitignore non verranno caricati, comunque dopo il primo caricamento delle cartelel vuote i file .gitignore non saranno più necessari, le directory vuote non verranno cancellate
 
 $ git status (controllo tutte le nuove modifiche)
 $ git add . (per inserire tutti i file della cartella nel repository git)
