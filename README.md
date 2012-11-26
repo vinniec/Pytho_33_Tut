@@ -39,7 +39,7 @@ Creazione Repository Git
 $ git config --global user.name "vinniec" (impostato il mio nick)
 $ git config --global user.email fz12345@gmail.com (impostata la mia email)
 
-$ export GIT_SSL_NO_VERIFY=false (pare che se non si modifica questa variabile d'ambiente git non riesca ad utilizzare https), in alternativa si può usare il comando $ git config http.sslVerify "false
+$ export GIT_SSL_NO_VERIFY=false (pare che se non si modifica questa variabile d'ambiente git non riesca ad utilizzare https), in alternativa si può usare il comando $ git config http.sslVerify "false"
 
 (nota per tinycore, SCM, git normale non funziona, ssh chiede chiavi pubbliche e quindi è meglio utilizzare https)
 $ git clone https://github.com/vinniec/Pytho_33_Tut.git (scarica i file del git)
@@ -56,18 +56,6 @@ $ git status (controllo tutte le nuove modifiche)
 $ git add . (per inserire tutti i file della cartella nel repository git)
 $ git commit -m "progetto di traduzione iniziale" (x commentare questo add)
 $ /apps/git/bin/git push origin master (carica i file sul server)
-
-
-Caricamento repository git da Omegat
-====================================
-1) menu->Progetto->Scarica il Progetto in collaborazione
-scelgo git
-Url Deposito: https://github.com/vinniec/Pytho_33_Tut.git
-Cartella Locale: /home/tc/PROVA/Pytho_33_Tut
-
-2)Attendo che scarichi e quando esce la finestra dei file da tradurre e seleziono  quello che mi interessa (si inizia da index.html), e poi chiudo questa finestra
-
-3)Posso iniziare a tradurre, se faccio doppioclick su un capoverso mi fa iniziare a scrivere (i capoversi non tradotti dovrebbero essere blu e quando iniziamo a tradurre il segmento corrente dovrebbe essere vuoto, se abbiamo settato omegat come dicevamo prima)
 
 
 Salvare dopo aver fatto le modifiche
@@ -88,3 +76,16 @@ Un ottima guida per git è questa http://git-scm.com/book/it , anche questo semb
 
 I dizionari li ho presi da quì http://linguistico.sourceforge.net/pages/start.html , più precisamente i file .add e .dic in
 http://prdownloads.sourceforge.net/linguistico/italiano_2_4_2007_09_01.zip?download
+
+
+Caricamento repository git da Omegat
+====================================
+#sconsigliato a causa dell'impossibilità di salvare
+1) menu->Progetto->Scarica il Progetto in collaborazione
+scelgo git
+Url Deposito: https://github.com/vinniec/Pytho_33_Tut.git
+Cartella Locale: /home/tc/PROVA/Pytho_33_Tut
+
+2)Attendo che scarichi e quando esce la finestra dei file da tradurre e seleziono  quello che mi interessa (si inizia da index.html), e poi chiudo questa finestra
+
+3)Posso iniziare a tradurre, se faccio doppioclick su un capoverso mi fa iniziare a scrivere (i capoversi non tradotti dovrebbero essere blu e quando iniziamo a tradurre il segmento corrente dovrebbe essere vuoto, se abbiamo settato omegat come dicevamo prima)
