@@ -43,7 +43,7 @@ $ git config --global user.email fz12345@gmail.com (impostata la mia email)
 $ /apps/git/bin/git clone https://github.com/vinniec/Pytho_33_Tut.git (scarica i file del git)
 $ cd ./Pytho_33_Tut/ (si dirige nel repo)
 
-copio tutti i file della traduzione (tutorial e lo zip) più questo readme, le directory vuote non vengono caricate sul server, per cui bisognerà inserire dei file chiamati .gitignore al loro interno contenenti
+copio tutti i file della traduzione (tutorial e lo zip) più questo readme, le directory vuote non vengono caricate sul server, per cui la prima volta che si caricano queste directory vuote bisognerà inserire al loro interno dei file chiamati .gitignore al loro interno contenenti
  # Ignore everything in this directory
  *
  # Except this file
@@ -80,4 +80,7 @@ E probabilmente bisogna scaricare ogni volta che si inizia a tradurre
 
 Risorse
 =======
-Un ottima risorsa per git è questa http://git-scm.com/book/it , anche questo sembra carino http://rogerdudler.githhtthttp://git-scm.com/book/itp://git-scm.com/book/itub.com/git-guide/index.it.html
+Un ottima guida per git è questa http://git-scm.com/book/it , anche questo sembra carino http://rogerdudler.githhtthttp://git-scm.com/book/itp://git-scm.com/book/itub.com/git-guide/index.it.html
+
+I dizionari li ho presi da quì http://linguistico.sourceforge.net/pages/start.html , più precisamente i file .add e .dic in
+http://prdownloads.sourceforge.net/linguistico/italiano_2_4_2007_09_01.zip?download
